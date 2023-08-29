@@ -160,8 +160,8 @@ function MolarMassCalculator() {
           onChange={(e) => setCompound(e.target.value)}
         />
         <button id="calculateBtn" data-text="Awesome" className="button" type="button" onClick={handleCalculate}>
-            <span class="actual-text">&nbsp;calculate&nbsp;</span>
-            <span class="hover-text" aria-hidden="true">&nbsp;calculate&nbsp;</span>
+            <span className="actual-text">&nbsp;calculate&nbsp;</span>
+            <span className="hover-text" aria-hidden="true">&nbsp;calculate&nbsp;</span>
         </button>
       </div>
       <div className="display">
