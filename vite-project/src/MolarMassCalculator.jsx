@@ -153,14 +153,15 @@ function MolarMassCalculator() {
       <div className="input">
         <label>Compound inputs are case-sensitive</label>
         <input
-          id="userInput"
+          id="input"
           placeholder="Enter a Chemical Compound"
           type="text"
           value={compound}
           onChange={(e) => setCompound(e.target.value)}
         />
-        <button id="calculateBtn" type="button" onClick={handleCalculate}>
-          Calculate
+        <button id="calculateBtn" data-text="Awesome" className="button" type="button" onClick={handleCalculate}>
+            <span class="actual-text">&nbsp;calculate&nbsp;</span>
+            <span class="hover-text" aria-hidden="true">&nbsp;calculate&nbsp;</span>
         </button>
       </div>
       <div className="display">
