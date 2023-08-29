@@ -1,16 +1,16 @@
 import React from "react"
-import Header from "./Header"
-import Input from "./Input"
-import Display from "./Display"
+import MolarMassCalculator from "./MolarMassCalculator"
+import "./App.css"
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <Input />
-      <Display />
-    </>
+    <div>
+      <div className="heading">
+        <h1>Molar Mass Calculator</h1>
+      </div>
+      <MolarMassCalculator />
+    </div>
   )
 }
 
