@@ -113,7 +113,7 @@ const atomicMasses = {
   Uub: 277,
 };
 
-function calculateMolarMass(element) {
+const calculateMolarMass = (element) => {
   let molarMass = 0;
   for (let i = 0; i < element.length; i++) {
     let character = element[i];
@@ -151,14 +151,16 @@ function MolarMassCalculator() {
   return (
     <>
       <div className="input">
-        <label>Compound inputs are case-sensitive</label>
-        <input
-          id="input"
-          placeholder="Enter a Chemical Compound"
-          type="text"
-          value={compound}
-          onChange={(e) => setCompound(e.target.value)}
-        />
+        <div className="label">
+            <label>Compound inputs are case-sensitive</label>
+            <input
+            id="input"
+            placeholder="Enter Chemical Compound"
+            type="text"
+            value={compound}
+            onChange={(e) => setCompound(e.target.value)}
+            />
+        </div>
         <button id="calculateBtn" data-text="Awesome" className="button" type="button" onClick={handleCalculate}>
             <span className="actual-text">&nbsp;calculate&nbsp;</span>
             <span className="hover-text" aria-hidden="true">&nbsp;calculate&nbsp;</span>
