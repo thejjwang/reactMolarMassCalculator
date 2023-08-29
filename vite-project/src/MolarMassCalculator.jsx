@@ -136,6 +136,7 @@ function calculateMolarMass(element) {
       // molarMass += atomicMass;
     }
   }
+  return molarMass;
 }
 
 function MolarMassCalculator() {
